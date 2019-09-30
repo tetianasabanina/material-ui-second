@@ -15,15 +15,15 @@ const useStyles = makeStyles({
 const listitems = [
     {
         text: "home",
-        id: 1
+        listId: 1
     },
     {
         text: "second link",
-        id: 2
+        listId: 2
     },
     {
         text: "third link",
-        id: 3
+        listId: 3
     }
 ]
 
@@ -33,7 +33,7 @@ const MainNavigation =() => {
         <div>
             <List component="nav">
                 {listitems.map(item =>(
-                <ListItem className={classes.listitem} key={item.id}>
+                <ListItem className={classes.listitem} key={item.listId}>
                     <ListItemText>
                         <Typography>
                             {item.text}
