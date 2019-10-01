@@ -3,6 +3,19 @@ import {Card, CardActions, CardMedia, CardContent, Typography} from '@material-u
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles({
+    root: {
+      flexGrow: 1,
+      padding: "20px 0 20px 0",
+      height: "100%",
+      color: "#305792",
+      margin: "20px"
+    },
+    
+  });
+
 const posts = [
     {
         title: "September",
@@ -42,13 +55,14 @@ const posts = [
 ]
 
 const Posts =() => {
-    console.log(posts);
+    // console.log(posts);
+    const classes = useStyles();
     return (
-        <div style={{marginTop:200, padding:20}}>
-            <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
+        <div className={classes.root}>
+            <Grid container direction="row" justify="center" alignItems="center" spacing={4}>
                 {posts.map(postitem => (
                     
-                    <Grid item ms={12} md={4} key={postitem.id}>
+                    <Grid item xs={12} sm={6} md={4} key={postitem.id}>
                         <Card >
                             <CardMedia
                                 component="img"
