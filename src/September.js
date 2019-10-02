@@ -1,8 +1,6 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-
 import { makeStyles } from '@material-ui/styles';
-
 
 const useStyles = makeStyles({
   page: {
@@ -18,11 +16,11 @@ const useStyles = makeStyles({
   }
   
 });
-const Home =() => {
+const September =() => {
     const classes = useStyles();
     return (
         <div className={classes.page} >
-            <Typography variant="h2">This is HOME page</Typography>
+            <Typography variant="h2">September</Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Nulla dignissim ultrices lacinia. 
               Etiam commodo venenatis nisl, ut rutrum ligula aliquet eu. 
@@ -41,4 +39,4 @@ const Home =() => {
     );
 }
 
-export default Home;
+export default September;

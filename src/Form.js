@@ -25,7 +25,8 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         background: "lightBlue",
-        borderRadius: "0 0 5px 5px"
+        borderRadius: "0 0 5px 5px",
+        marginTop: "-5px"
     },
   });
 
@@ -38,11 +39,11 @@ const Form = () => {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          style={{background: "lightBlue"}}
+          style={{background: "lightBlue", borderRadius: "5px"}}
         >
         
-        <Typography>
-            Form:
+        <Typography variant="h6" color="primary">
+            Expanding Form:
         </Typography>
         
             

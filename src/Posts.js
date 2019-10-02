@@ -2,7 +2,9 @@ import React from 'react';
 import {Card, CardActions, CardMedia, CardContent, Typography} from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import { Route, Link } from "react-router-dom";
 
+//import September from './September';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -22,40 +24,52 @@ const posts = [
         text: "September...",
         image: "https://cdn.pixabay.com/photo/2019/09/15/20/26/autumn-4479342_960_720.jpg",
         id: 1,
-        url: 'https://www.w3schools.com/'
+        url: '/posts/september'
     },
     {
         title: "October",
         text: "October...",
         image: "https://cdn.pixabay.com/photo/2018/10/22/19/19/foliage-3766097_960_720.jpg",
         id: 2,
-        url: 'https://www.w3schools.com/'
+        url: '/posts/october'
     },
     {
         title: "November",
         text: "November...",
         image: "https://cdn.pixabay.com/photo/2018/12/04/15/37/autumn-3855864_960_720.jpg",
         id: 3,
-        url: 'https://www.w3schools.com/'
+        url: '/posts/november'
     },
     {
         title: "December",
         text: "December...",
         image: "https://cdn.pixabay.com/photo/2018/05/21/17/18/snow-3418819_960_720.jpg",
         id: 4,
-        url: 'https://www.w3schools.com/'
+        url: '/posts/december'
     },
     {
         title: "January",
         text: "Lomaaaaaa!",
         image: "https://cdn.pixabay.com/photo/2019/08/02/12/52/carvoeiro-4379670_960_720.jpg",
         id: 5,
-        url: 'https://www.w3schools.com/'
+        url: '/posts/january'
     },
 ]
 
-const Posts =() => {
-    // console.log(posts);
+const Post = ({ match }) => {
+
+    const post1 = posts.find(({ id }) => id === match.params.postId) 
+
+    return (
+      <div>
+        {post1.title}
+        {post1.text}
+      </div>
+    )
+  }
+
+const Posts =({match}) => {
+    // console.log(match);
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -74,13 +88,18 @@ const Posts =() => {
                                 <Typography>{postitem.title}</Typography>
                             </CardContent>
                             <CardActions>
-                                <Button variant="outlined" color="primary" href={postitem.url}>Read more</Button>
+                            <Link to={`/posts/${postitem.id}`} >
+                                Read more
+                            </Link>
                             </CardActions>
                         </Card>
                     </Grid>
-
+                    
                 ))}
             </Grid>
+            
+                                
+           
         </div>
     )
 }

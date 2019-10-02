@@ -3,3 +3,15 @@
     padding: 0;
 }
 
+.page {
+    flex-grow: 1;
+    margin: 20px;
+    padding: 20px 0 20px 0;
+    height: 100vh;
+       
+  }
+
+  .paragraph {
+    margin-top: 30px;
+  }
+  
