@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import './App.css';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
@@ -9,29 +8,23 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainNavigation from "./MainNavigation";
 import Posts from "./Posts";
 import Footer from "./Footer";
-import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
-import September from './September'
+import Post from "./Post";
+import postdata from "./postdata";
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     position: "static",
-    color: "#EBCF12",
     background: "linear-gradient(to right top, #305792, #9c5ba4, #ef5e86, #ff8b4c, #ebcf12);w",
   },
   title: {
     flexGrow: 1,
+    color: "#EBCF12",
   },
   
-  listitem: {
-    display: "inline-block",
-    width: 150,
-    textAlign: "right",
-    color: "#305792",
-  },
    
 });
 
@@ -49,21 +42,14 @@ const App = () => {
           </ToolBar>
         </AppBar>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/posts">
-            <Posts />
-          </Route>
-          <Route path="/posts/:id" component={September}/>
-         
-         
+          <Route exact path="/" component={Posts} />
+       
+          <Route path="/about" component={About} />
+   
+          <Route path="/contact" component={Contact} />>
+ 
+          <Route path={`/:postId`} render={ (props) => <Post data={postdata} {...props} />}/>
+   
         </Switch>
       </Router>
       <Footer />
