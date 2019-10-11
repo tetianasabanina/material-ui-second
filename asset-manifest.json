@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/material-ui-second/static/css/main.0cb802b1.chunk.css",
+    "main.js": "/material-ui-second/static/js/main.3bfeb522.chunk.js",
+    "main.js.map": "/material-ui-second/static/js/main.3bfeb522.chunk.js.map",
+    "runtime-main.js": "/material-ui-second/static/js/runtime-main.e26c73a2.js",
+    "runtime-main.js.map": "/material-ui-second/static/js/runtime-main.e26c73a2.js.map",
+    "static/js/2.889323df.chunk.js": "/material-ui-second/static/js/2.889323df.chunk.js",
+    "static/js/2.889323df.chunk.js.map": "/material-ui-second/static/js/2.889323df.chunk.js.map",
+    "index.html": "/material-ui-second/index.html",
+    "precache-manifest.968d4f3ef39572e6c508b8073050ec90.js": "/material-ui-second/precache-manifest.968d4f3ef39572e6c508b8073050ec90.js",
+    "service-worker.js": "/material-ui-second/service-worker.js",
+    "static/css/main.0cb802b1.chunk.css.map": "/material-ui-second/static/css/main.0cb802b1.chunk.css.map"
+  }
+}
