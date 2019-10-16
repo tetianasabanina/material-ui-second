@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/materialui-second/static/css/main.ab7fde9f.chunk.css",
-    "main.js": "/materialui-second/static/js/main.9ca54248.chunk.js",
-    "main.js.map": "/materialui-second/static/js/main.9ca54248.chunk.js.map",
+    "main.js": "/materialui-second/static/js/main.1b7160a6.chunk.js",
+    "main.js.map": "/materialui-second/static/js/main.1b7160a6.chunk.js.map",
     "runtime-main.js": "/materialui-second/static/js/runtime-main.8d6eaf03.js",
     "runtime-main.js.map": "/materialui-second/static/js/runtime-main.8d6eaf03.js.map",
     "static/js/2.fb03f683.chunk.js": "/materialui-second/static/js/2.fb03f683.chunk.js",
     "static/js/2.fb03f683.chunk.js.map": "/materialui-second/static/js/2.fb03f683.chunk.js.map",
     "index.html": "/materialui-second/index.html",
-    "precache-manifest.bc133071fe25b790cea0a2ce7283d824.js": "/materialui-second/precache-manifest.bc133071fe25b790cea0a2ce7283d824.js",
+    "precache-manifest.598d15d3025b7ca88e246fb25b8eae8d.js": "/materialui-second/precache-manifest.598d15d3025b7ca88e246fb25b8eae8d.js",
     "service-worker.js": "/materialui-second/service-worker.js",
     "static/css/main.ab7fde9f.chunk.css.map": "/materialui-second/static/css/main.ab7fde9f.chunk.css.map"
   }
