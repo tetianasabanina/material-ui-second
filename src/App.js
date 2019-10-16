@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import ToolBar from '@material-ui/core/ToolBar';
@@ -32,12 +31,12 @@ const App = () => {
   const classes = useStyles();
   return (
     <div>
-      <Router>
+      <Router basename="/">
         <AppBar className={classes.root}>
           <ToolBar>
             <Typography variant="h5" className={classes.title}>
               MaterialUI example
-          </Typography>
+            </Typography>
             <MainNavigation />
           </ToolBar>
         </AppBar>

@@ -1,10 +1,15 @@
 import React from 'react';
-import {List, ListItem, ListItemText, Typography, Button} from '@material-ui/core';
+import {List, ListItem, ListItemText, Button} from '@material-ui/core';
 import { Link } from "react-router-dom";
 
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
+  list: {
+    display: "flex",
+
+  }, 
+
   listitem: {
    display: "inline-block",
    width: 150,
@@ -50,7 +55,7 @@ const listitems = [
     return (
         <div>
            
-            <List component="nav">
+            <List component="nav" className={classes.list}>
               {listitems.map(item =>(
                 <ListItem className={classes.listitem} key={item.listId}>
                     <ListItemText>

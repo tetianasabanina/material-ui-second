@@ -1,35 +1,46 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import HomeButton from './HomeButton';
+
 import { makeStyles } from '@material-ui/styles';
-import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
-  page: {
-    flexGrow: 1,
-    margin: "20px",
-    padding: "20px 0 20px 0",
-    height: "100vh",
-    color: "#ef5e86",
+    root: {
+      flexGrow: 1,
+      width: "80%",
+      margin: "120px auto auto",
+      height: "100%",
+      color: "#305792",
+    },
     
-  },
-  
-  paragraph: {
-    marginTop: "30px"
-  }
-  
-});
+    postImg: {
+      flexFlow: "left",
+      maxWidth: "100%",
+      maxHeight: "300px",
+      margin: "20px 0",
+      borderRadius: "8px",
+    }, 
+    paragraph: {
+      padding: "30px 0",
+      
+    }
+  });
+
 const Post =({ match, data }) => {
-    const classes = useStyles();
+  const classes = useStyles();
     let post = data.find(p=> p.id == match.params.postId);
     return (
-        <div className={classes.page} >
-            <Typography variant="caption">POST #{post.id}</Typography>
-            <Typography variant="h2">{post.title}</Typography>
-            <Typography variant="subtitle1" className={classes.paragraph}>
-                {post.text}
-            </Typography>
-            <Button>Back</Button>
-        </div>
+      <div className={classes.root} >
+        <React.Fragment >
+          <img src={post.image} alt={post.title} className={classes.postImg} ></img>
+        </React.Fragment>
+        <Typography variant="caption">POST #{post.id}</Typography>
+        <Typography variant="h2">{post.title}</Typography>
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          {post.text}
+        </Typography>
+        <HomeButton />
+      </div>
     );
 }
 

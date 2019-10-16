@@ -1,20 +1,22 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import HomeButton from './HomeButton';
+
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
     page: {
       flexGrow: 1,
-      margin: "20px",
-      padding: "20px 0 20px 0",
+      width: "80%",
+      margin: "120px auto auto",
       height: "100vh",
       color: "#ef5e86",
     },
     
-    
   });
 
 const About =() => {
+  
     const classes = useStyles();
     return (
         <div className={classes.page}>
@@ -29,6 +31,7 @@ const About =() => {
             elementum dui. 
             Pellentesque semper lobortis mi, nec vulputate nibh molestie vitae.
             </Typography>
+            <HomeButton />
         </div>
     );
 }

@@ -81,7 +81,7 @@ const Form = () => {
             </FormControl>
             <Button variant="contained" color="primary" size="medium">
                 Send
-                </Button>
+            </Button>
         
         </ExpansionPanelDetails>
       </ExpansionPanel>

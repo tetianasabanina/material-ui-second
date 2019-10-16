@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
 
-//import September from './September';
 import postdata from "./postdata";
 import { makeStyles } from '@material-ui/styles';
 
@@ -14,7 +13,7 @@ const useStyles = makeStyles({
       padding: "20px 0 20px 0",
       height: "100%",
       color: "#305792",
-      margin: "20px"
+      margin: "90px 20px 20px"
     },
     link: {
         textDecoration: "none",
