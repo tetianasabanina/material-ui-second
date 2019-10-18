@@ -44,7 +44,7 @@ const Posts =({match}) => {
                             <CardActions>
 
                             <Button variant="outlined" >
-                                <Link to={`${match.url}${postitem.id}`} className={classes.link}>
+                                <Link to={`${postitem.id}`} className={classes.link}>
                                     Read more
                                 </Link>
                             </Button>

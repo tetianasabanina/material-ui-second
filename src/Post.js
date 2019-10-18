@@ -27,8 +27,15 @@ const useStyles = makeStyles({
   });
 
 const Post =({ match, data }) => {
+
+  console.log("match", match);
+  console.log("data", data);
   const classes = useStyles();
-    let post = data.find(p=> p.id == match.params.postId);
+    let post = data.find(p=> p.id.toString() === match.params.postId);
+    if (!post) {
+      return <div>Sorry, but the player was not found</div>
+    }
+    console.log(post);
     return (
       <div className={classes.root} >
         <img src={post.image} alt={post.title} className={classes.postImg}></img>
