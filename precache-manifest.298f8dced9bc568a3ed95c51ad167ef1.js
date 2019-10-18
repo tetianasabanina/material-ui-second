@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d800a44f106da1c9b3731470e52e6e2",
+    "revision": "2a85ce14b7a175341f134b499619b533",
     "url": "/materialui-second/index.html"
   },
   {
-    "revision": "51d87f1803f15a007680",
+    "revision": "d107243ce2dc19cdbc0d",
     "url": "/materialui-second/static/css/main.ab7fde9f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/materialui-second/static/js/2.fb03f683.chunk.js"
   },
   {
-    "revision": "51d87f1803f15a007680",
-    "url": "/materialui-second/static/js/main.b0abf968.chunk.js"
+    "revision": "d107243ce2dc19cdbc0d",
+    "url": "/materialui-second/static/js/main.434f7742.chunk.js"
   },
   {
     "revision": "75b6f7f475fb73ba64cd",
