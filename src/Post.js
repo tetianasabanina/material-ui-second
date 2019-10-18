@@ -31,14 +31,9 @@ const Post =({ match, data }) => {
     let post = data.find(p=> p.id == match.params.postId);
     return (
       <div className={classes.root} >
-        <React.Fragment >
-          <img src={post.image} alt={post.title} className={classes.postImg} ></img>
-        </React.Fragment>
-        <Typography variant="caption">POST #{post.id}</Typography>
+        <img src={post.image} alt={post.title} className={classes.postImg}></img>
         <Typography variant="h2">{post.title}</Typography>
-        <Typography variant="subtitle1" className={classes.paragraph}>
-          {post.text}
-        </Typography>
+        <Typography className={classes.paragraph}>{post.text}</Typography>          
         <HomeButton />
       </div>
     );
