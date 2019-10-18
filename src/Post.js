@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import HomeButton from './HomeButton';
-
+import Posts from './Posts'
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -33,7 +33,8 @@ const Post =({ match, data }) => {
   const classes = useStyles();
     let post = data.find(p=> p.id.toString() === match.params.postId);
     if (!post) {
-      return <div>Sorry, but the player was not found</div>
+      console.log("no post found");
+      return <div><Posts /></div>
     }
     console.log(post);
     return (
